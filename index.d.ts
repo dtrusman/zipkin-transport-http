@@ -7,7 +7,8 @@ declare class HttpLogger implements Logger {
     jsonEncoder?: JsonEncoder,
     httpTimeout?: number,
     headers?: { [name: string]: any },
-    log?: Console
+    log?: Console,
+    fetch: any
   });
   logSpan(span: model.Span): void;
 }
