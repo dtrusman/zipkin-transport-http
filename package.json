@@ -1,0 +1,26 @@
+{
+  "name": "zipkin-transport-http",
+  "version": "0.17.1",
+  "description": "Transports Zipkin trace data via HTTP",
+  "main": "lib/index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "mocha --exit --require ../../test/helper.js",
+    "prepublish": "npm run build"
+  },
+  "author": "Openzipkin <openzipkin.alt@gmail.com>",
+  "license": "Apache-2.0",
+  "repository": "https://github.com/openzipkin/zipkin-js",
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "7.1.5",
+    "@babel/core": "7.1.5",
+    "body-parser": "^1.15.2",
+    "express": "^4.13.4",
+    "mocha": "^5.2.0",
+    "zipkin": "^0.17.1"
+  }
+}
